@@ -1,0 +1,18 @@
+Log file created at: 2023/02/01 00:48:47
+Running on machine: aeb618c1addd
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20230201 00:48:47.755635   428 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230201 00:48:50.984939   428 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+W20230201 00:49:01.025983   428 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230201 00:49:04.060434   428 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+W20230201 00:49:14.065477   428 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230201 00:49:17.081189   428 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+W20230201 00:49:27.083762   428 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230201 00:49:30.143400   428 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+W20230201 00:49:40.155892   428 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230201 00:49:43.181545   428 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+W20230201 00:49:53.185541   428 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230201 00:49:56.205721   428 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+W20230201 00:50:06.211323   428 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230201 00:50:06.370056   428 FileUtils.cpp:377] Failed to read the directory "/root/nebula/nebula/data/storage/nebula" (2): No such file or directory

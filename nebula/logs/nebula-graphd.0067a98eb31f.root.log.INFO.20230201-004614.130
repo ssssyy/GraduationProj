@@ -1,0 +1,19 @@
+Log file created at: 2023/02/01 00:46:14
+Running on machine: 0067a98eb31f
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230201 00:46:14.444087   130 GraphDaemon.cpp:122] Starting Graph HTTP Service
+I20230201 00:46:14.523660   131 WebService.cpp:124] Web service started on HTTP[19669]
+I20230201 00:46:14.524129   130 GraphDaemon.cpp:136] Number of networking IO threads: 2
+I20230201 00:46:14.524454   130 GraphDaemon.cpp:145] Number of worker threads: 2
+I20230201 00:46:14.582581   130 MetaClient.cpp:80] Create meta client to "127.0.0.1":9559
+I20230201 00:46:14.582800   130 MetaClient.cpp:81] root path: /root/nebula, data path size: 0
+I20230201 00:46:16.948081   130 MetaClient.cpp:3114] Load leader ok
+I20230201 00:46:16.960335   130 MetaClient.cpp:162] Register time task for heartbeat!
+I20230201 00:46:16.961896   130 GraphSessionManager.cpp:331] Total of 0 sessions are loaded
+I20230201 00:46:16.964040   130 Snowflake.cpp:16] WorkerId init success: 1
+I20230201 00:46:16.964998   239 GraphServer.cpp:59] Starting nebula-graphd on 127.0.0.1:9669
+I20230201 00:46:45.081367   130 GraphDaemon.cpp:176] Signal 15(Terminated) received, stopping this server
+I20230201 00:46:45.088266   239 GraphServer.cpp:66] nebula-graphd on 127.0.0.1:9669 has been stopped
+I20230201 00:46:45.089186   130 GraphDaemon.cpp:161] The graph Daemon stopped
+I20230201 00:46:45.089565   130 GraphServer.cpp:97] The graph server has been stopped
