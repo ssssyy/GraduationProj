@@ -1,3 +1,29 @@
+# 2月9日
+## Doing
+### 多版本
+底层kv依然是一个key对应一个属性props，为key增加版本号。采用MVTO思路，每个key增加txn-id作为写锁、read-ts作为读锁、以及一个modify-ts作为该条目的时间戳。
+### 思路梳理
+对于vertex和edge，对应的属性采用kv对存储，因此如果需要访问属性，则需要经过IndexTree来找到对应的时间戳，拼接成实际的key；
+对于非属性的访问，即判断vertex相邻的vertex以及路径，也存在多版本问题。在nebula中，找一个点的邻居会需要用到getNeighbors方法，而具体底层执行是在storage/exec中，例如EdgeNode.h文件中的SingleEdgeNode类提供按照前缀（partID+srcID+EdgeType）扫描一个src的指定type的所有出边，返回一个迭代器，因此对于这一类方法，需要修改key的生成方法，同时对于返回的迭代器需要进行过滤：按照当前事务的txnid和返回的key的modify-ts进行比较，只返回可见的部分。
+底层db中的key：rawKey+modify-ts拼接而成；
+txn-id：由snowflake算法本地生成；
+IndexTree的功能：给定一个rawKey，查询出对应的modify-ts，因此不需要存储对应的rawKey部分；IndexTree是一个内存中的结构，存在丢失数据的可能性，但底层kvstore提供prefix scan功能，所以如果需要数据恢复，则进行前缀扫描访问到的key，重新从磁盘中加载对应的ts序列。
+### 雪花ID
+使用millisecond级别的时间戳+10位机器号+10位序列号组成。一个server在整个流程中只需要持有一个生成器即可，使用storaged在metad中注册的编号作为机器id，因此需要添加这部分交互流程。
+### TreeIndex
+以内存BTree形式组织，key为rawKey，value为vector/deque，里面包含这个rawKey对应的版本号序列。对于开启事务的CRUD操作：
+CREATE：写操作，需要先判断是否有相同key的部分存在（根据语义进行key替换/不做操作），然后新建一个key插入BTree，并在DB中写入value；
+READ：读操作，反向遍历对应的vector，找到第一个符合版本要求的ts，用这个ts去拼接key；
+UPDATE：更新操作，先读再写，写的时候会向vector末尾插入一个新的版本（此处需要考虑写-写冲突的解决）；
+DELETE：更新操作，将IndexTree中对应条目标志为删除，并向db中发删除请求。这里需要考虑将多版本的kv都一并删除。
+GC：根据索引判断，删除IndexTree中对应版本并同时批量发删除kv请求。
+
+## Todo
+明天需要仔细列出不同操作的实际情况（例如根据语义以及隔离等级来对可见度做一个判断）。
+看metad和storaged的交互部分，并完善使用雪花算法的IDGenerator的使用；对tag和edge的数据结构做一个更改，以及调研一下这种思路下的BTree如何实现。
+
+
+
 # 2月8日
 ## Doing
 看了分布式系统时间戳的一些实现，以及对于底层使用kvstore的mvcc实现。
