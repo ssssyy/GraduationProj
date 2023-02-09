@@ -1,0 +1,189 @@
+Log file created at: 2023/02/07 17:43:40
+Running on machine: LAPTOP-NVA7NVJ9
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230207 17:43:40.159875   444 StorageDaemon.cpp:132] localhost = "127.0.0.1":9779
+I20230207 17:43:40.175324   444 StorageDaemon.cpp:147] data path= /mnt/d/nebula/nebula/data/storage
+I20230207 17:43:40.261212   444 MetaClient.cpp:80] Create meta client to "127.0.0.1":9559
+I20230207 17:43:40.266487   444 MetaClient.cpp:81] root path: /mnt/d/nebula/nebula, data path size: 1
+I20230207 17:43:40.282425   444 FileBasedClusterIdMan.cpp:53] Get clusterId: 5910483749134832870
+I20230207 17:43:40.746834   444 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 1 space
+I20230207 17:43:40.747665   444 MetaClient.cpp:3114] Load leader ok
+I20230207 17:43:40.784015   444 MetaClient.cpp:162] Register time task for heartbeat!
+I20230207 17:43:40.784258   444 StorageServer.cpp:219] Init schema manager
+I20230207 17:43:40.784412   444 StorageServer.cpp:222] Init index manager
+I20230207 17:43:40.784591   444 StorageServer.cpp:225] Init kvstore
+I20230207 17:43:40.784765   444 NebulaStore.cpp:51] Start the raft service...
+I20230207 17:43:40.790872   444 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20230207 17:43:40.874348   444 RaftexService.cpp:46] Start raft service on 9780
+I20230207 17:43:40.880003   444 NebulaStore.cpp:85] Scan the local path, and init the spaces_
+I20230207 17:43:40.881808   444 NebulaStore.cpp:92] Scan path "/mnt/d/nebula/nebula/data/storage/nebula/0"
+I20230207 17:43:40.881951   444 NebulaStore.cpp:92] Scan path "/mnt/d/nebula/nebula/data/storage/nebula/1"
+I20230207 17:43:40.901226   444 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20230207 17:43:40.901396   444 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20230207 17:43:40.901530   444 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20230207 17:43:40.918946   444 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20230207 17:43:41.089440   444 RocksEngine.cpp:97] open rocksdb on /mnt/d/nebula/nebula/data/storage/nebula/1/data
+I20230207 17:43:41.089919   444 NebulaStore.cpp:196] Load space 1 from disk
+I20230207 17:43:41.090273   444 NebulaStore.cpp:205] Need to open 15 parts of space 1
+I20230207 17:43:41.204238   508 NebulaStore.cpp:228] Load part 1, 1 from disk
+I20230207 17:43:41.206107   510 NebulaStore.cpp:228] Load part 1, 3 from disk
+I20230207 17:43:41.208329   511 NebulaStore.cpp:228] Load part 1, 4 from disk
+I20230207 17:43:41.210021   509 NebulaStore.cpp:228] Load part 1, 2 from disk
+I20230207 17:43:41.313158   509 NebulaStore.cpp:228] Load part 1, 6 from disk
+I20230207 17:43:41.322778   510 NebulaStore.cpp:228] Load part 1, 7 from disk
+I20230207 17:43:41.328272   511 NebulaStore.cpp:228] Load part 1, 8 from disk
+I20230207 17:43:41.331323   508 NebulaStore.cpp:228] Load part 1, 5 from disk
+I20230207 17:43:41.417285   509 NebulaStore.cpp:228] Load part 1, 10 from disk
+I20230207 17:43:41.421568   508 NebulaStore.cpp:228] Load part 1, 9 from disk
+I20230207 17:43:41.423493   510 NebulaStore.cpp:228] Load part 1, 11 from disk
+I20230207 17:43:41.431211   511 NebulaStore.cpp:228] Load part 1, 12 from disk
+I20230207 17:43:41.490669   509 NebulaStore.cpp:228] Load part 1, 14 from disk
+I20230207 17:43:41.495674   510 NebulaStore.cpp:228] Load part 1, 15 from disk
+I20230207 17:43:41.497687   508 NebulaStore.cpp:228] Load part 1, 13 from disk
+I20230207 17:43:41.497895   444 NebulaStore.cpp:262] Load space 1 complete
+I20230207 17:43:41.498083   444 NebulaStore.cpp:271] Init data from partManager for "127.0.0.1":9779
+I20230207 17:43:41.498251   444 NebulaStore.cpp:369] Data space 1 has existed!
+I20230207 17:43:41.505228   444 NebulaStore.cpp:430] [Space: 1, Part: 1] has existed!
+I20230207 17:43:41.505412   444 NebulaStore.cpp:430] [Space: 1, Part: 2] has existed!
+I20230207 17:43:41.505563   444 NebulaStore.cpp:430] [Space: 1, Part: 3] has existed!
+I20230207 17:43:41.505754   444 NebulaStore.cpp:430] [Space: 1, Part: 4] has existed!
+I20230207 17:43:41.505899   444 NebulaStore.cpp:430] [Space: 1, Part: 5] has existed!
+I20230207 17:43:41.506063   444 NebulaStore.cpp:430] [Space: 1, Part: 6] has existed!
+I20230207 17:43:41.506223   444 NebulaStore.cpp:430] [Space: 1, Part: 7] has existed!
+I20230207 17:43:41.506450   444 NebulaStore.cpp:430] [Space: 1, Part: 8] has existed!
+I20230207 17:43:41.506662   444 NebulaStore.cpp:430] [Space: 1, Part: 9] has existed!
+I20230207 17:43:41.506803   444 NebulaStore.cpp:430] [Space: 1, Part: 10] has existed!
+I20230207 17:43:41.506961   444 NebulaStore.cpp:430] [Space: 1, Part: 11] has existed!
+I20230207 17:43:41.507092   444 NebulaStore.cpp:430] [Space: 1, Part: 12] has existed!
+I20230207 17:43:41.507231   444 NebulaStore.cpp:430] [Space: 1, Part: 13] has existed!
+I20230207 17:43:41.507362   444 NebulaStore.cpp:430] [Space: 1, Part: 14] has existed!
+I20230207 17:43:41.507491   444 NebulaStore.cpp:430] [Space: 1, Part: 15] has existed!
+I20230207 17:43:41.507656   444 NebulaStore.cpp:78] Register handler...
+I20230207 17:43:41.507807   444 StorageServer.cpp:228] Init LogMonitor
+I20230207 17:43:41.508036   444 StorageServer.cpp:96] Starting Storage HTTP Service
+I20230207 17:43:41.508828   444 StorageServer.cpp:100] Http Thread Pool started
+I20230207 17:43:41.528316   536 WebService.cpp:124] Web service started on HTTP[19779]
+I20230207 17:43:41.528542   444 TransactionManager.cpp:24] TransactionManager ctor()
+I20230207 17:43:41.534992   444 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20230207 17:43:41.535172   444 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20230207 17:43:41.535343   444 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20230207 17:43:41.535625   444 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20230207 17:43:41.606649   444 RocksEngine.cpp:97] open rocksdb on /mnt/d/nebula/nebula/data/storage/nebula/0/data
+I20230207 17:43:41.607020   444 AdminTaskManager.cpp:22] max concurrent subtasks: 10
+I20230207 17:43:41.607247   444 AdminTaskManager.cpp:40] exit AdminTaskManager::init()
+I20230207 17:43:41.607288   557 AdminTaskManager.cpp:227] waiting for incoming task
+I20230207 17:44:01.561110   507 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 1 space
+I20230207 17:44:01.561656   507 MetaClient.cpp:3114] Load leader ok
+E20230207 17:52:25.122887   503 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:52:25.186940   503 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:52:25.192445   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:52:38.205248   504 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:52:38.207125   504 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:52:38.209048   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:52:51.238723   499 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:52:51.243664   499 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:52:51.246697   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:53:04.262840   498 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:53:04.263728   498 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:53:04.264612   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:53:17.282318   501 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:53:17.285427   501 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:53:17.288410   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:53:30.305236   506 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:53:30.307760   506 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:53:30.310143   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:53:43.328976   493 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:53:43.331521   493 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:53:43.334133   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:53:56.359799   492 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:53:56.360973   492 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:53:56.361941   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:54:09.378623   497 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:54:09.381153   497 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:54:09.383971   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:54:22.399797   502 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:54:22.402428   502 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:54:22.404799   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:54:35.420159   503 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:54:35.420900   503 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:54:35.421748   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:54:48.438349   502 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:54:48.441182   502 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:54:48.443846   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:55:01.453143   497 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:55:01.453728   497 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:55:01.454245   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:55:14.479302   498 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:55:14.481916   498 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:55:14.484560   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:55:27.492614   497 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:55:27.495712   497 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:55:27.498919   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:55:40.518680   500 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:55:40.521836   500 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:55:40.524798   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:55:53.543274   499 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:55:53.546245   499 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:55:53.549352   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:56:06.574395   492 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:56:06.576783   492 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:56:06.579248   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:56:19.607232   486 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:56:19.609972   486 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:56:19.612851   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:56:32.632166   496 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:56:32.634466   496 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:56:32.636880   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:56:45.655041   499 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:56:45.656118   499 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:56:45.657341   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:56:58.673586   502 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:56:58.676154   502 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:56:58.679176   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:57:11.707551   501 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:57:11.708428   501 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:57:11.709256   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:57:24.733523   494 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:57:24.734134   494 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:57:24.734879   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+E20230207 17:57:47.834436   494 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230207 17:57:47.836865   494 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230207 17:57:47.839102   507 MetaClient.cpp:192] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20230207 17:57:59.028913   444 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+I20230207 17:57:59.030261   444 NebulaStore.cpp:321] Stop the raft service...
+I20230207 17:57:59.030478   444 RaftexService.cpp:67] Stopping the raftex service on port 9780
+I20230207 17:57:59.030987   444 RaftexService.cpp:77] All partitions have stopped
+I20230207 17:57:59.031352   444 NebulaStore.cpp:324] Stop kv engine...
+I20230207 17:57:59.047197   444 TransactionManager.cpp:70] TransactionManager stop()
+I20230207 17:57:59.047490   444 TransactionManager.cpp:75] TransactionManager join()
+I20230207 17:57:59.047667   444 AdminTaskManager.cpp:179] enter AdminTaskManager::shutdown()
+I20230207 17:57:59.047955   558 AdminTaskManager.cpp:149] Unreported-Admin-Thread stopped
+I20230207 17:57:59.048234   557 AdminTaskManager.cpp:234] detect AdminTaskManager::shutdown()
+I20230207 17:57:59.048537   444 RocksEngine.h:196] Release rocksdb on /mnt/d/nebula/nebula/data/storage/nebula/0
+I20230207 17:57:59.061138   444 AdminTaskManager.cpp:196] exit AdminTaskManager::shutdown()
+I20230207 17:57:59.130652   444 NebulaStore.cpp:321] Stop the raft service...
+I20230207 17:57:59.130812   444 RaftexService.cpp:67] Stopping the raftex service on port 9780
+I20230207 17:57:59.130936   444 RaftexService.cpp:77] All partitions have stopped
+I20230207 17:57:59.131057   444 NebulaStore.cpp:324] Stop kv engine...
+I20230207 17:57:59.131191   444 NebulaStore.cpp:39] Cut off the relationship with meta client
+I20230207 17:57:59.131911   444 Part.h:59] [Port: 9780, Space: 1, Part: 13] ~Part()
+I20230207 17:57:59.134424   444 Part.h:59] [Port: 9780, Space: 1, Part: 15] ~Part()
+I20230207 17:57:59.137035   444 Part.h:59] [Port: 9780, Space: 1, Part: 14] ~Part()
+I20230207 17:57:59.140734   444 Part.h:59] [Port: 9780, Space: 1, Part: 12] ~Part()
+I20230207 17:57:59.144631   444 Part.h:59] [Port: 9780, Space: 1, Part: 2] ~Part()
+I20230207 17:57:59.148030   444 Part.h:59] [Port: 9780, Space: 1, Part: 4] ~Part()
+I20230207 17:57:59.151042   444 Part.h:59] [Port: 9780, Space: 1, Part: 6] ~Part()
+I20230207 17:57:59.154117   444 Part.h:59] [Port: 9780, Space: 1, Part: 1] ~Part()
+I20230207 17:57:59.157151   444 Part.h:59] [Port: 9780, Space: 1, Part: 3] ~Part()
+I20230207 17:57:59.160027   444 Part.h:59] [Port: 9780, Space: 1, Part: 7] ~Part()
+I20230207 17:57:59.163116   444 Part.h:59] [Port: 9780, Space: 1, Part: 8] ~Part()
+I20230207 17:57:59.165982   444 Part.h:59] [Port: 9780, Space: 1, Part: 5] ~Part()
+I20230207 17:57:59.168989   444 Part.h:59] [Port: 9780, Space: 1, Part: 10] ~Part()
+I20230207 17:57:59.171774   444 Part.h:59] [Port: 9780, Space: 1, Part: 9] ~Part()
+I20230207 17:57:59.174654   444 Part.h:59] [Port: 9780, Space: 1, Part: 11] ~Part()
+I20230207 17:57:59.178395   444 RocksEngine.h:196] Release rocksdb on /mnt/d/nebula/nebula/data/storage/nebula/1
+I20230207 17:57:59.185024   444 NebulaStore.cpp:47] ~NebulaStore()
+I20230207 17:57:59.185374   444 StorageDaemon.cpp:186] The storage Daemon stopped
+I20230207 17:57:59.185925   444 TransactionManager.cpp:70] TransactionManager stop()
+I20230207 17:57:59.186336   444 TransactionManager.cpp:75] TransactionManager join()

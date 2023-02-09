@@ -1,0 +1,7 @@
+Log file created at: 2023/02/08 00:29:59
+Running on machine: LAPTOP-NVA7NVJ9
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20230208 00:29:59.202064  3770 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230208 00:29:59.210938  3770 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230208 00:29:59.211786  3728 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect

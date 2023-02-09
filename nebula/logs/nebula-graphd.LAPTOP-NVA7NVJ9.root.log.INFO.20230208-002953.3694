@@ -1,0 +1,28 @@
+Log file created at: 2023/02/08 00:29:53
+Running on machine: LAPTOP-NVA7NVJ9
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230208 00:29:53.986374  3694 GraphDaemon.cpp:122] Starting Graph HTTP Service
+I20230208 00:29:54.117949  3695 WebService.cpp:124] Web service started on HTTP[19669]
+I20230208 00:29:54.118403  3694 GraphDaemon.cpp:136] Number of networking IO threads: 2
+I20230208 00:29:54.118646  3694 GraphDaemon.cpp:145] Number of worker threads: 2
+I20230208 00:29:54.204844  3694 MetaClient.cpp:80] Create meta client to "127.0.0.1":9559
+I20230208 00:29:54.205075  3694 MetaClient.cpp:81] root path: /mnt/d/nebula/nebula, data path size: 0
+E20230208 00:29:57.527240  3726 MetaClient.cpp:758] Send request to "127.0.0.1":9559, exceed retry limit
+E20230208 00:29:57.534536  3726 MetaClient.cpp:759] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20230208 00:29:57.538735  3694 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20230208 00:29:57.539435  3694 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20230208 00:30:07.758080  3694 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 0 space
+I20230208 00:30:07.758242  3694 MetaClient.cpp:3114] Load leader ok
+I20230208 00:30:07.771397  3694 MetaClient.cpp:162] Register time task for heartbeat!
+I20230208 00:30:07.772120  3694 GraphSessionManager.cpp:331] Total of 0 sessions are loaded
+I20230208 00:30:07.773542  3694 Snowflake.cpp:16] WorkerId init success: 1
+I20230208 00:30:07.773826  3805 GraphServer.cpp:59] Starting nebula-graphd on 127.0.0.1:9669
+I20230208 00:30:27.821650  3802 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 1 space
+I20230208 00:30:27.822043  3802 MetaClient.cpp:3114] Load leader ok
+I20230208 00:31:53.973991  3717 GraphService.cpp:76] Authenticating user root from [::ffff:127.0.0.1]:56704
+I20230208 00:33:03.536707  3717 SwitchSpaceExecutor.cpp:37] Graph switched to `basketballplayer', space id: 1
+I20230208 00:38:51.407735  3694 GraphDaemon.cpp:176] Signal 15(Terminated) received, stopping this server
+I20230208 00:38:51.415292  3805 GraphServer.cpp:66] nebula-graphd on 127.0.0.1:9669 has been stopped
+I20230208 00:38:51.416656  3694 GraphDaemon.cpp:161] The graph Daemon stopped
+I20230208 00:38:51.421151  3694 GraphServer.cpp:97] The graph server has been stopped
