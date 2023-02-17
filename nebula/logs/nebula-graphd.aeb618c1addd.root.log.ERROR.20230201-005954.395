@@ -1,5 +1,0 @@
-Log file created at: 2023/02/01 00:59:54
-Running on machine: aeb618c1addd
-Running duration (h:mm:ss): 0:00:00
-Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
-E20230201 00:59:54.111668   417 QueryInstance.cpp:137] SyntaxError: syntax error near `,'

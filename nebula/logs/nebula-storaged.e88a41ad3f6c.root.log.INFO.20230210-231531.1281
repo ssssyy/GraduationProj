@@ -1,0 +1,7 @@
+Log file created at: 2023/02/10 23:15:31
+Running on machine: e88a41ad3f6c
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230210 23:15:31.265286  1281 StorageDaemon.cpp:132] localhost = "127.0.0.1":9779
+I20230210 23:15:31.276736  1281 StorageDaemon.cpp:147] data path= /root/nebula/nebula/data/storage
+E20230210 23:15:31.316102  1281 StorageDaemon.cpp:167] Invalid timezone file `build/resources/date_time_zonespec.csv', exception: `Unable to locate or access the required datafile. Filespec: build/resources/date_time_zonespec.csv'.

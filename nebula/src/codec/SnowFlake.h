@@ -7,7 +7,7 @@
 class SnowFlake{
 public:
     SnowFlake(){
-        m_seqMask = ~(-1L<<10);
+        m_seqMask = 4095L;
         m_lastTs = TimeMs();
     }
     ~SnowFlake(){}
@@ -28,4 +28,3 @@ private:
     int64_t m_seqMask;
     int64_t m_epoch{1675958400000L};    // start ts 2023-02-10 00:00:00
 };
-

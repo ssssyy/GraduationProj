@@ -8,7 +8,7 @@
 #include <gflags/gflags.h>
 
 DEFINE_string(timezone_file,
-              "share/resources/date_time_zonespec.csv",
+              "resources/date_time_zonespec.csv",
               "The file path to the timezone file.");
 
 // If it's invalid timezone the service initialize will failed.

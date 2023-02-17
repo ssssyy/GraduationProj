@@ -14,7 +14,7 @@ namespace nebula {
 int64_t getSequence(int64_t id) {
   return id & Snowflake::kMaxSequence;
 }
-int64_t getWorkerId(int64_t id) {
+int32_t getWorkerId(int64_t id) {
   return (id >> Snowflake::kSequenceBit) & Snowflake::kMaxWorkerId;
 }
 int64_t getTimestamp(int64_t id) {

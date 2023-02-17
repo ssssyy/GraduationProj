@@ -1,0 +1,258 @@
+Log file created at: 2023/02/10 23:36:15
+Running on machine: e88a41ad3f6c
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230210 23:36:15.570171  2084 MetaDaemon.cpp:137] localhost = "127.0.0.1":9559
+I20230210 23:36:15.595708  2084 NebulaStore.cpp:51] Start the raft service...
+I20230210 23:36:15.600802  2084 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20230210 23:36:15.731951  2084 RaftexService.cpp:46] Start raft service on 9560
+I20230210 23:36:15.744992  2084 NebulaStore.cpp:85] Scan the local path, and init the spaces_
+I20230210 23:36:15.748809  2084 NebulaStore.cpp:92] Scan path "/root/nebula/nebula/data/meta/nebula/0"
+I20230210 23:36:15.749018  2084 NebulaStore.cpp:271] Init data from partManager for "127.0.0.1":9559
+I20230210 23:36:15.749212  2084 NebulaStore.cpp:387] Create data space 0
+I20230210 23:36:15.960330  2084 RocksEngine.cpp:97] open rocksdb on /root/nebula/nebula/data/meta/nebula/0/data
+I20230210 23:36:15.997730  2084 NebulaStore.cpp:459] Space 0, part 0 has been added, asLearner 0
+I20230210 23:36:15.997946  2084 NebulaStore.cpp:78] Register handler...
+I20230210 23:36:15.998095  2084 MetaDaemonInit.cpp:106] Waiting for the leader elected...
+I20230210 23:36:15.998250  2084 MetaDaemonInit.cpp:118] Leader has not been elected, sleep 1s
+I20230210 23:36:16.998750  2084 MetaDaemonInit.cpp:145] Get meta version is 3
+I20230210 23:36:16.999039  2084 MetaDaemonInit.cpp:162] Nebula store init succeeded, clusterId 5910483749134832870
+I20230210 23:36:16.999262  2084 MetaDaemon.cpp:150] Start http service
+I20230210 23:36:17.000197  2084 MetaDaemonInit.cpp:219] Starting Meta HTTP Service
+I20230210 23:36:17.030882  2209 WebService.cpp:124] Web service started on HTTP[19559]
+I20230210 23:36:17.031379  2084 JobManager.cpp:60] JobManager initialized
+I20230210 23:36:17.031394  2220 JobManager.cpp:136] JobManager::scheduleThread enter
+I20230210 23:36:17.031812  2084 MetaDaemonInit.cpp:185] Check root user
+I20230210 23:36:17.032459  2084 RootUserMan.h:35] God user exists
+I20230210 23:36:17.043746  2084 MetaDaemon.cpp:201] The meta daemon start on "127.0.0.1":9559
+I20230210 23:36:17.233417  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:36:17.237421  2228 HBProcessor.cpp:87] Update host "127.0.0.1":9669 dir info, root path: /root/nebula/nebula, data path size: 0
+I20230210 23:36:18.377180  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:18.377424  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:19.397027  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:19.398036  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:20.402478  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:20.402966  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:21.404956  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:21.405279  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:27.897086  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:36:31.427208  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:31.427893  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:32.431721  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:32.432547  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:33.436018  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:33.436399  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:34.438998  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:34.439599  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:37.902611  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:36:44.447304  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:44.447826  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:45.451217  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:45.451952  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:46.455204  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:46.455560  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:47.457535  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:47.458052  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:47.918264  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:36:57.464656  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:57.465157  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:57.922317  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:36:58.506017  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:58.506711  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:36:59.509850  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:36:59.510309  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:00.514333  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:00.515216  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:07.935401  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:37:10.524163  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:10.524842  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:11.527112  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:11.527899  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:12.530772  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:12.531498  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:13.534598  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:13.535552  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:17.941608  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:37:23.543540  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:23.544026  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:24.546437  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:24.546990  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:25.549741  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:25.550415  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:26.552215  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:26.552877  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:27.955228  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:37:36.561795  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:36.562757  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:37.565728  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:37.566215  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:37.962128  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:37:38.568655  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:38.569403  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:39.572036  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:39.572362  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:47.967475  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:37:49.578027  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:49.578640  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:50.581422  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:50.582075  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:51.584393  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:51.585129  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:52.587635  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:37:52.588385  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:37:57.971350  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:38:02.594635  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:02.595116  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:03.597570  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:03.598183  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:04.600916  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:04.601563  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:05.604065  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:05.604635  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:07.975705  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:38:15.612376  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:15.613211  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:16.616618  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:16.617427  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:17.620046  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:17.620932  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:17.987303  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:38:18.624029  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:18.624635  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:27.992532  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:38:28.630800  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:28.631422  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:29.634074  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:29.634687  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:30.636852  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:30.637900  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:31.641122  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:31.641877  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:38.005762  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:38:41.646904  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:41.647475  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:42.649582  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:42.650053  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:43.652323  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:43.652644  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:44.665055  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:44.671797  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:48.024853  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:38:54.682224  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:54.682839  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:55.695247  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:55.695694  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:56.697908  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:56.698518  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:57.700666  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:38:57.701253  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:38:58.035953  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:39:07.705835  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:07.706516  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:08.050477  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:39:08.708866  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:08.709324  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:09.712002  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:09.712819  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:10.715632  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:10.716274  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:18.054337  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:39:20.722334  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:20.722980  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:21.735875  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:21.736568  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:22.739437  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:22.740186  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:23.742475  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:23.742751  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:28.066598  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:39:33.746991  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:33.747627  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:34.750213  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:34.751049  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:35.753500  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:35.754106  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:36.756428  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:36.756980  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:38.071619  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:39:46.760756  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:46.761122  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:47.763345  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:47.763969  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:48.079028  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:39:48.766328  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:48.766904  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:49.769488  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:49.770004  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:39:58.085783  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:39:59.773393  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:39:59.773777  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:40:00.775758  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:00.776254  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:40:01.778390  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:01.778944  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:40:02.781356  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:02.782071  2228 HBProcessor.cpp:40] Machine "127.0.0.1":9779 is not registed
+I20230210 23:40:08.098397  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:40:12.786932  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:12.787299  2228 HBProcessor.cpp:50] Set clusterId for new host "127.0.0.1":9779!
+I20230210 23:40:12.787545  2228 HBProcessor.cpp:87] Update host "127.0.0.1":9779 dir info, root path: /root/nebula/nebula, data path size: 1
+I20230210 23:40:12.822750  2228 SessionManagerProcessor.cpp:130] resp list session: 1676043563816069
+I20230210 23:40:18.101956  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:40:23.205739  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:28.109311  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:40:33.222400  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:38.115247  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:40:43.232362  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:48.127281  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:40:53.237128  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:40:58.132465  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:41:03.254614  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:41:08.144596  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:41:13.260320  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:41:18.150555  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:41:23.267874  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:41:28.156946  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:41:33.281764  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:41:38.162650  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:41:43.294560  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:41:44.944761  2228 CreateSpaceProcessor.cpp:276] Create space basketballplayer
+I20230210 23:41:48.175637  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:41:48.180493  2228 SessionManagerProcessor.cpp:130] resp list session: 1676043563816069
+I20230210 23:41:53.305738  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:41:53.311328  2228 SessionManagerProcessor.cpp:130] resp list session: 1676043563816069
+I20230210 23:41:58.201877  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:42:03.476054  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:42:08.214349  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:42:08.220994  2228 SessionManagerProcessor.cpp:130] resp list session: 1676043563816069
+I20230210 23:42:13.489084  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:42:13.493460  2228 SessionManagerProcessor.cpp:130] resp list session: 1676043563816069
+I20230210 23:42:18.240221  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:42:23.509979  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:42:28.245409  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:42:29.279973  2228 CreateTagProcessor.cpp:87] Create Tag player, TagID 2
+I20230210 23:42:33.516907  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:42:33.522253  2228 SessionManagerProcessor.cpp:130] resp list session: 1676043563816069
+I20230210 23:42:38.258105  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9669, role = GRAPH
+I20230210 23:42:43.531092  2228 HBProcessor.cpp:33] Receive heartbeat from "127.0.0.1":9779, role = STORAGE
+I20230210 23:42:45.559710  2084 MetaDaemon.cpp:231] Signal 15(Terminated) received, stopping this server
+I20230210 23:42:45.574098  2084 JobManager.cpp:124] JobManager::shutDown() begin
+I20230210 23:42:45.577473  2220 JobManager.cpp:141] Detect shutdown called, exit
+I20230210 23:42:45.577811  2220 JobDescription.cpp:107] Loading job description failed, error: E_JOB_NOT_IN_SPACE
+I20230210 23:42:45.578102  2220 JobManager.cpp:161] Load an invalid job from space 0 jodId 0
+I20230210 23:42:45.578444  2084 JobManager.cpp:132] JobManager::shutDown() end
+I20230210 23:42:45.578943  2084 NebulaStore.cpp:321] Stop the raft service...
+I20230210 23:42:45.579191  2084 RaftexService.cpp:67] Stopping the raftex service on port 9560
+I20230210 23:42:45.579397  2084 RaftexService.cpp:77] All partitions have stopped
+I20230210 23:42:45.579622  2084 NebulaStore.cpp:324] Stop kv engine...
+I20230210 23:42:45.580229  2084 NebulaStore.cpp:321] Stop the raft service...
+I20230210 23:42:45.580466  2084 RaftexService.cpp:67] Stopping the raftex service on port 9560
+I20230210 23:42:45.580677  2084 RaftexService.cpp:77] All partitions have stopped
+I20230210 23:42:45.580888  2084 NebulaStore.cpp:324] Stop kv engine...
+I20230210 23:42:45.581117  2084 NebulaStore.cpp:39] Cut off the relationship with meta client
+I20230210 23:42:45.582104  2084 Part.h:59] [Port: 9560, Space: 0, Part: 0] ~Part()
+I20230210 23:42:45.594655  2084 RocksEngine.h:196] Release rocksdb on /root/nebula/nebula/data/meta/nebula/0
+I20230210 23:42:45.630877  2084 NebulaStore.cpp:47] ~NebulaStore()
+I20230210 23:42:45.637387  2084 MetaDaemon.cpp:216] The meta Daemon stopped
+I20230210 23:42:45.640890  2084 JobManager.cpp:124] JobManager::shutDown() begin
+I20230210 23:42:45.641376  2084 JobManager.cpp:127] JobManager not running, exit

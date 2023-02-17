@@ -9,6 +9,7 @@ nebula_add_library(
     RowReaderV2.cpp
     RowWriterV2.cpp
     RowReaderWrapper.cpp
+    SnowFlake.cpp
 )
 
 nebula_add_subdirectory(test)

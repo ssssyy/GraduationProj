@@ -1,0 +1,136 @@
+Log file created at: 2023/02/10 23:36:18
+Running on machine: e88a41ad3f6c
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230210 23:36:18.144495  2242 StorageDaemon.cpp:132] localhost = "127.0.0.1":9779
+I20230210 23:36:18.154505  2242 StorageDaemon.cpp:147] data path= /root/nebula/nebula/data/storage
+I20230210 23:36:18.196460  2242 MetaClient.cpp:80] Create meta client to "127.0.0.1":9559
+I20230210 23:36:18.200464  2242 MetaClient.cpp:81] root path: /root/nebula/nebula, data path size: 1
+W20230210 23:36:18.214529  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:36:21.405911  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:36:21.413511  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:36:31.415225  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:36:34.440527  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:36:34.441598  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:36:44.442577  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:36:47.458976  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:36:47.460605  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:36:57.462286  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:37:00.516669  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:37:00.519443  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:37:10.521339  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:37:13.537127  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:37:13.539942  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:37:23.541642  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:37:26.553794  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:37:26.555603  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:37:36.557850  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:37:39.573045  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:37:39.574282  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:37:49.575603  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:37:52.589324  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:37:52.591140  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:38:02.592780  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:38:05.605505  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:38:05.606814  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:38:15.608826  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:38:18.625537  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:38:18.627180  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:38:28.628684  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:38:31.642846  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:38:31.644681  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:38:41.645598  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:38:44.672590  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:38:44.679000  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:38:54.680223  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:38:57.701900  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:38:57.702715  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:39:07.703771  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:39:10.717167  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:39:10.718464  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:39:20.720114  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:39:23.743326  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:39:23.743950  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:39:33.745141  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:39:36.757732  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:39:36.758666  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:39:46.759699  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:39:49.770733  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:39:49.771752  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:39:59.772518  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20230210 23:40:02.783272  2242 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20230210 23:40:02.784657  2242 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20230210 23:40:12.785730  2242 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20230210 23:40:12.788961  2291 MetaClient.cpp:2551] Persist the cluster Id from metad 5910483749134832870
+I20230210 23:40:12.789659  2291 FileBasedClusterIdMan.cpp:21] Remove the existed file cluster.id
+I20230210 23:40:12.791328  2291 FileBasedClusterIdMan.cpp:34] Persist clusterId 5910483749134832870 succeeded!
+I20230210 23:40:12.828599  2242 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 0 space
+I20230210 23:40:12.828802  2242 MetaClient.cpp:3114] Load leader ok
+I20230210 23:40:12.830804  2242 MetaClient.cpp:162] Register time task for heartbeat!
+I20230210 23:40:12.831085  2242 StorageServer.cpp:219] Init schema manager
+I20230210 23:40:12.831267  2242 StorageServer.cpp:222] Init index manager
+I20230210 23:40:12.831435  2242 StorageServer.cpp:225] Init kvstore
+I20230210 23:40:12.832197  2242 NebulaStore.cpp:51] Start the raft service...
+I20230210 23:40:12.837116  2242 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20230210 23:40:12.899307  2242 RaftexService.cpp:46] Start raft service on 9780
+I20230210 23:40:12.905206  2242 NebulaStore.cpp:85] Scan the local path, and init the spaces_
+E20230210 23:40:12.905946  2242 FileUtils.cpp:377] Failed to read the directory "/root/nebula/nebula/data/storage/nebula" (2): No such file or directory
+I20230210 23:40:12.906450  2242 NebulaStore.cpp:271] Init data from partManager for "127.0.0.1":9779
+I20230210 23:40:12.906646  2242 NebulaStore.cpp:78] Register handler...
+I20230210 23:40:12.906800  2242 StorageServer.cpp:228] Init LogMonitor
+I20230210 23:40:12.907068  2242 StorageServer.cpp:96] Starting Storage HTTP Service
+I20230210 23:40:12.907922  2242 StorageServer.cpp:100] Http Thread Pool started
+I20230210 23:40:12.922667  2388 WebService.cpp:124] Web service started on HTTP[19779]
+I20230210 23:40:12.922927  2242 TransactionManager.cpp:24] TransactionManager ctor()
+I20230210 23:40:12.947943  2242 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20230210 23:40:12.948137  2242 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20230210 23:40:12.948319  2242 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20230210 23:40:12.960556  2242 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20230210 23:40:13.080364  2242 RocksEngine.cpp:97] open rocksdb on /root/nebula/nebula/data/storage/nebula/0/data
+I20230210 23:40:13.080796  2242 AdminTaskManager.cpp:22] max concurrent subtasks: 10
+I20230210 23:40:13.081105  2242 AdminTaskManager.cpp:40] exit AdminTaskManager::init()
+I20230210 23:40:13.081168  2412 AdminTaskManager.cpp:227] waiting for incoming task
+I20230210 23:41:53.332404  2377 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 0 space
+I20230210 23:41:53.332653  2377 MetaClient.cpp:3114] Load leader ok
+I20230210 23:41:53.332952  2377 NebulaStore.cpp:387] Create data space 1
+I20230210 23:41:53.336383  2377 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20230210 23:41:53.336591  2377 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20230210 23:41:53.336776  2377 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20230210 23:41:53.337080  2377 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20230210 23:41:53.426123  2377 RocksEngine.cpp:97] open rocksdb on /root/nebula/nebula/data/storage/nebula/1/data
+I20230210 23:41:53.438529  2377 NebulaStore.cpp:459] Space 1, part 1 has been added, asLearner 0
+I20230210 23:41:53.445376  2377 NebulaStore.cpp:459] Space 1, part 2 has been added, asLearner 0
+I20230210 23:41:53.451952  2377 NebulaStore.cpp:459] Space 1, part 3 has been added, asLearner 0
+I20230210 23:41:53.458683  2377 NebulaStore.cpp:459] Space 1, part 5 has been added, asLearner 0
+I20230210 23:41:53.465785  2377 NebulaStore.cpp:459] Space 1, part 4 has been added, asLearner 0
+I20230210 23:42:13.498456  2377 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 1 space
+I20230210 23:42:13.498750  2377 MetaClient.cpp:3114] Load leader ok
+I20230210 23:42:33.528993  2377 MetaClient.cpp:3108] Load leader of "127.0.0.1":9779 in 1 space
+I20230210 23:42:33.529395  2377 MetaClient.cpp:3114] Load leader ok
+I20230210 23:42:45.666957  2242 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+I20230210 23:42:45.669835  2242 NebulaStore.cpp:321] Stop the raft service...
+I20230210 23:42:45.670363  2242 RaftexService.cpp:67] Stopping the raftex service on port 9780
+I20230210 23:42:45.670814  2242 RaftexService.cpp:77] All partitions have stopped
+I20230210 23:42:45.671238  2242 NebulaStore.cpp:324] Stop kv engine...
+I20230210 23:42:45.689400  2242 TransactionManager.cpp:70] TransactionManager stop()
+I20230210 23:42:45.689640  2242 TransactionManager.cpp:75] TransactionManager join()
+I20230210 23:42:45.689801  2242 AdminTaskManager.cpp:179] enter AdminTaskManager::shutdown()
+I20230210 23:42:45.689983  2413 AdminTaskManager.cpp:149] Unreported-Admin-Thread stopped
+I20230210 23:42:45.697561  2412 AdminTaskManager.cpp:234] detect AdminTaskManager::shutdown()
+I20230210 23:42:45.697974  2242 RocksEngine.h:196] Release rocksdb on /root/nebula/nebula/data/storage/nebula/0
+I20230210 23:42:45.703822  2242 AdminTaskManager.cpp:196] exit AdminTaskManager::shutdown()
+I20230210 23:42:45.704174  2242 NebulaStore.cpp:321] Stop the raft service...
+I20230210 23:42:45.704459  2242 RaftexService.cpp:67] Stopping the raftex service on port 9780
+I20230210 23:42:45.704665  2242 RaftexService.cpp:77] All partitions have stopped
+I20230210 23:42:45.704856  2242 NebulaStore.cpp:324] Stop kv engine...
+I20230210 23:42:45.705077  2242 NebulaStore.cpp:39] Cut off the relationship with meta client
+I20230210 23:42:45.706327  2242 Part.h:59] [Port: 9780, Space: 1, Part: 4] ~Part()
+I20230210 23:42:45.710744  2242 Part.h:59] [Port: 9780, Space: 1, Part: 5] ~Part()
+I20230210 23:42:45.714500  2242 Part.h:59] [Port: 9780, Space: 1, Part: 3] ~Part()
+I20230210 23:42:45.719082  2242 Part.h:59] [Port: 9780, Space: 1, Part: 1] ~Part()
+I20230210 23:42:45.724056  2242 Part.h:59] [Port: 9780, Space: 1, Part: 2] ~Part()
+I20230210 23:42:45.729903  2242 RocksEngine.h:196] Release rocksdb on /root/nebula/nebula/data/storage/nebula/1
+I20230210 23:42:45.738252  2242 NebulaStore.cpp:47] ~NebulaStore()
+I20230210 23:42:45.738735  2242 StorageDaemon.cpp:186] The storage Daemon stopped
+I20230210 23:42:45.739406  2242 TransactionManager.cpp:70] TransactionManager stop()
+I20230210 23:42:45.739737  2242 TransactionManager.cpp:75] TransactionManager join()

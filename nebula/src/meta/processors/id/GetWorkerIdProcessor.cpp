@@ -13,7 +13,7 @@ void GetWorkerIdProcessor::process(const cpp2::GetWorkerIdReq& req) {
   folly::SharedMutex::WriteHolder holder(LockUtils::lock());
   auto result = doGet(ipAddr);
   if (nebula::ok(result)) {
-    int64_t workerId = std::stoi(std::move(nebula::value(result)));
+    int32_t workerId = std::stoi(std::move(nebula::value(result)));
 
     handleErrorCode(nebula::cpp2::ErrorCode::SUCCEEDED);
     resp_.workerid_ref() = workerId;
@@ -29,8 +29,7 @@ void GetWorkerIdProcessor::process(const cpp2::GetWorkerIdReq& req) {
     return;
   }
 
-  int64_t workerId = std::stoi(std::move(nebula::value(newResult)));
-  // TODO: (jackwener) limit worker, add LOG ERROR
+  int32_t workerId = std::stoi(std::move(nebula::value(newResult)));
   auto code = doSyncPut(std::vector<kvstore::KV>{{ipAddr, std::to_string(workerId + 1)}});
   if (code != nebula::cpp2::ErrorCode::SUCCEEDED) {
     LOG(ERROR) << "Put worker ipAddr failed during get worker id";

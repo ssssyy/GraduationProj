@@ -1,0 +1,32 @@
+Log file created at: 2023/02/10 23:15:28
+Running on machine: e88a41ad3f6c
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230210 23:15:28.398195  1165 MetaDaemon.cpp:137] localhost = "127.0.0.1":9559
+I20230210 23:15:28.421243  1165 NebulaStore.cpp:51] Start the raft service...
+I20230210 23:15:28.427203  1165 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20230210 23:15:28.571040  1165 RaftexService.cpp:46] Start raft service on 9560
+I20230210 23:15:28.585170  1165 NebulaStore.cpp:85] Scan the local path, and init the spaces_
+I20230210 23:15:28.588444  1165 NebulaStore.cpp:92] Scan path "/root/nebula/nebula/data/meta/nebula/0"
+I20230210 23:15:28.588723  1165 NebulaStore.cpp:271] Init data from partManager for "127.0.0.1":9559
+I20230210 23:15:28.588941  1165 NebulaStore.cpp:387] Create data space 0
+I20230210 23:15:28.790524  1165 RocksEngine.cpp:97] open rocksdb on /root/nebula/nebula/data/meta/nebula/0/data
+I20230210 23:15:28.829984  1165 NebulaStore.cpp:459] Space 0, part 0 has been added, asLearner 0
+I20230210 23:15:28.830277  1165 NebulaStore.cpp:78] Register handler...
+I20230210 23:15:28.830484  1165 MetaDaemonInit.cpp:106] Waiting for the leader elected...
+I20230210 23:15:28.830673  1165 MetaDaemonInit.cpp:118] Leader has not been elected, sleep 1s
+I20230210 23:15:29.831014  1165 MetaDaemonInit.cpp:145] Get meta version is 3
+I20230210 23:15:29.831256  1165 MetaDaemonInit.cpp:162] Nebula store init succeeded, clusterId 5910483749134832870
+I20230210 23:15:29.831457  1165 MetaDaemon.cpp:150] Start http service
+I20230210 23:15:29.832170  1165 MetaDaemonInit.cpp:219] Starting Meta HTTP Service
+I20230210 23:15:29.852514  1274 WebService.cpp:124] Web service started on HTTP[19559]
+I20230210 23:15:29.853029  1165 JobManager.cpp:60] JobManager initialized
+I20230210 23:15:29.853039  1280 JobManager.cpp:136] JobManager::scheduleThread enter
+I20230210 23:15:29.853304  1165 MetaDaemonInit.cpp:185] Check root user
+I20230210 23:15:29.853724  1165 RootUserMan.h:35] God user exists
+E20230210 23:15:29.882666  1165 MetaDaemon.cpp:187] Invalid timezone file `build/resources/date_time_zonespec.csv', exception: `Unable to locate or access the required datafile. Filespec: build/resources/date_time_zonespec.csv'.
+I20230210 23:15:29.890739  1165 JobManager.cpp:124] JobManager::shutDown() begin
+I20230210 23:15:29.894809  1280 JobManager.cpp:141] Detect shutdown called, exit
+I20230210 23:15:29.895045  1280 JobDescription.cpp:107] Loading job description failed, error: E_JOB_NOT_IN_SPACE
+I20230210 23:15:29.895257  1280 JobManager.cpp:161] Load an invalid job from space 0 jodId 0
+I20230210 23:15:29.895551  1165 JobManager.cpp:132] JobManager::shutDown() end

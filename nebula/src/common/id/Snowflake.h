@@ -14,7 +14,7 @@ class Snowflake {
   FRIEND_TEST(SnowflakeTest, TestWorkerId);
   FRIEND_TEST(SnowflakeTest, TestConcurrency);
   friend int64_t getSequence(int64_t id);
-  friend int64_t getWorkerId(int64_t id);
+  friend int32_t getWorkerId(int64_t id);
   friend int64_t getTimestamp(int64_t id);
 
  public:

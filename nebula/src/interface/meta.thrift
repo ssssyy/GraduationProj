@@ -525,7 +525,7 @@ struct GetWorkerIdReq {
 struct GetWorkerIdResp {
     1: common.ErrorCode code,
     2: common.HostAddr  leader,
-    3: i64              workerid,
+    3: i32              workerid,
 }
 
 struct GetSegmentIdReq {
@@ -1194,6 +1194,15 @@ struct SaveGraphVersionReq {
     3: binary build_version;
 }
 
+// Get Machine ID for storaged
+struct GetMachineIDReq {
+    1: required common.HostAddr host;
+}
+
+struct GetMachineIDResp {
+    1: required i32 MachineID;
+}
+
 service MetaService {
     ExecResp createSpace(1: CreateSpaceReq req);
     ExecResp dropSpace(1: DropSpaceReq req);
@@ -1302,4 +1311,6 @@ service MetaService {
     SaveGraphVersionResp saveGraphVersion(1: SaveGraphVersionReq req)
 
     GetSegmentIdResp getSegmentId(1: GetSegmentIdReq req);
+
+    GetMachineIDResp getMachineId(1: GetMachineIDReq req);
 }

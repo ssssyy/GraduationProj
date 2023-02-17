@@ -1,5 +1,0 @@
-Log file created at: 2023/01/31 23:05:38
-Running on machine: f6383262d9da
-Running duration (h:mm:ss): 0:00:00
-Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
-E20230131 23:05:38.884374    36 MetaDaemon.cpp:187] Invalid timezone file `share/resources/date_time_zonespec.csv', exception: `Unable to locate or access the required datafile. Filespec: share/resources/date_time_zonespec.csv'.

@@ -1,0 +1,37 @@
+Log file created at: 2023/02/10 22:45:53
+Running on machine: e88a41ad3f6c
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230210 22:45:53.709292    32 MetaDaemon.cpp:137] localhost = "127.0.0.1":9559
+I20230210 22:45:53.741318    32 NebulaStore.cpp:51] Start the raft service...
+I20230210 22:45:53.750907    32 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20230210 22:45:54.113128    32 RaftexService.cpp:46] Start raft service on 9560
+I20230210 22:45:54.190485    32 NebulaStore.cpp:85] Scan the local path, and init the spaces_
+E20230210 22:45:54.206835    32 FileUtils.cpp:377] Failed to read the directory "/root/nebula/nebula/data/meta/nebula" (2): No such file or directory
+I20230210 22:45:54.237535    32 NebulaStore.cpp:271] Init data from partManager for "127.0.0.1":9559
+I20230210 22:45:54.237843    32 NebulaStore.cpp:387] Create data space 0
+I20230210 22:45:54.630702    32 RocksEngine.cpp:97] open rocksdb on /root/nebula/nebula/data/meta/nebula/0/data
+I20230210 22:45:54.661731    32 NebulaStore.cpp:459] Space 0, part 0 has been added, asLearner 0
+I20230210 22:45:54.662039    32 NebulaStore.cpp:78] Register handler...
+I20230210 22:45:54.662302    32 MetaDaemonInit.cpp:106] Waiting for the leader elected...
+I20230210 22:45:54.662530    32 MetaDaemonInit.cpp:118] Leader has not been elected, sleep 1s
+I20230210 22:45:55.662859    32 KVBasedClusterIdMan.h:109] There is no clusterId existed in kvstore!
+I20230210 22:45:55.663108    32 MetaDaemonInit.cpp:126] I am leader, create cluster Id
+I20230210 22:45:55.663295    32 KVBasedClusterIdMan.h:36] Create ClusterId 5910483749134832870
+I20230210 22:45:55.664022    58 KVBasedClusterIdMan.h:142] Put key __meta_cluster_id_key__, val 5910483749134832870
+I20230210 22:45:55.664338    32 MetaDaemonInit.cpp:145] Get meta version is 3
+I20230210 22:45:55.664499    32 MetaDaemonInit.cpp:162] Nebula store init succeeded, clusterId 5910483749134832870
+I20230210 22:45:55.664671    32 MetaDaemon.cpp:150] Start http service
+I20230210 22:45:55.665326    32 MetaDaemonInit.cpp:219] Starting Meta HTTP Service
+I20230210 22:45:55.699924   137 WebService.cpp:124] Web service started on HTTP[19559]
+I20230210 22:45:55.700445    32 JobManager.cpp:60] JobManager initialized
+I20230210 22:45:55.700879    32 MetaDaemonInit.cpp:185] Check root user
+I20230210 22:45:55.700454   143 JobManager.cpp:136] JobManager::scheduleThread enter
+I20230210 22:45:55.701290    32 RootUserMan.h:40] God user is not exists
+I20230210 22:45:55.702237    32 RootUserMan.h:58] Init root user
+E20230210 22:45:55.750658    32 MetaDaemon.cpp:187] Invalid timezone file `share/resources/date_time_zonespec.csv', exception: `Unable to locate or access the required datafile. Filespec: share/resources/date_time_zonespec.csv'.
+I20230210 22:45:55.753962    32 JobManager.cpp:124] JobManager::shutDown() begin
+I20230210 22:45:55.758024   143 JobManager.cpp:141] Detect shutdown called, exit
+I20230210 22:45:55.758908   143 JobDescription.cpp:107] Loading job description failed, error: E_JOB_NOT_IN_SPACE
+I20230210 22:45:55.759274   143 JobManager.cpp:161] Load an invalid job from space 0 jodId 0
+I20230210 22:45:55.759631    32 JobManager.cpp:132] JobManager::shutDown() end
